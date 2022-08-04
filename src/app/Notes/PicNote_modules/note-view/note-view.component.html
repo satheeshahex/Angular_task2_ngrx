@@ -1,0 +1,7 @@
+<h4>List of Text Note</h4>
+<div *ngFor="let note of picNotes$ | async; let i=index">
+  <span>{{i+1}}.</span>
+  {{note.description}}
+  {{note.title}}
+  <img [src]="note.image" style="max-width:300px;max-height:300px" />
+</div>

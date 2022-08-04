@@ -1,0 +1,8 @@
+<h4>Add New Pic Note</h4>
+description: <input type="text" #box>
+
+
+title: <input type="text" #boxtitle>
+
+image: <input name="imageUrl" type="file" accept="image/*" (change)="handleInputChange($event)" />
+<button (click)="addTextNote(box.value, boxtitle.value)">Add</button>
